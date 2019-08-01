@@ -10,7 +10,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="liko likoli,"> 
-    <meta name="description" content="liko&#39;s blog,Thumbnailator"> 
+    <meta name="description" content="liko&#39;s blog,Thumbnailator什么是Thumbnailator？
+
+Thumbnailator 是Java写的一个缩略图生成包
+为什么要用Thumbnailator？在Java中制作高质量的缩略图可能是,"> 
     <meta name="author" content="liko"> 
     <link rel="alternative" href="atom.xml" title="liko&#39;s blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -62,11 +65,39 @@
 
         </div>
         <div class="content markdown">
-            <h1 id="Thumbnailator"><a href="#Thumbnailator" class="headerlink" title="Thumbnailator"></a>Thumbnailator</h1>
+            <h1 id="Thumbnailator"><a href="#Thumbnailator" class="headerlink" title="Thumbnailator"></a>Thumbnailator</h1><h2 id="什么是Thumbnailator？"><a href="#什么是Thumbnailator？" class="headerlink" title="什么是Thumbnailator？"></a>什么是Thumbnailator？</h2><img src="/2019/08/02/Thumbnailator/home-image.png" title="home image">
+
+<p><em>Thumbnailator</em> 是Java写的一个缩略图生成包</p>
+<h2 id="为什么要用Thumbnailator？"><a href="#为什么要用Thumbnailator？" class="headerlink" title="为什么要用Thumbnailator？"></a>为什么要用Thumbnailator？</h2><p>在Java中制作高质量的缩略图可能是一项相当困难的任务。</p>
+<p>需要学习如何使用 Image I/O API, Java 2D API, 图片处理，图片缩放技术…, 不要担心！ <em>Thumbnailator</em> 将为我们处理所有这些事情!</p>
+<p><em>Thumbnailator</em> 是一个单独的JAR文件并且不依赖任何外部包，使开发和部署变得简单容易。为了简单的被引入到Maven项目中, 你可以在Maven Central Repository 中获取到它。</p>
+<h2 id="Thumbnailator有多简单？"><a href="#Thumbnailator有多简单？" class="headerlink" title="Thumbnailator有多简单？"></a>Thumbnailator有多简单？</h2><p><em>Thumbnailator</em>‘s流式接口可以用来在一个简单的步骤中处理进行相当复杂的图片缩略任务。</p>
+<p>举个例子, 为一个目录中的图片文件创建JPEG缩略图，全部调整为640像素×480像素的最大尺寸，同时保留原始图像的纵横比可以通过以下方式执行：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Thumbnails.of(<span class="keyword">new</span> File(<span class="string">"path/to/directory"</span>).listFiles())</span><br><span class="line">    .size(<span class="number">640</span>, <span class="number">480</span>)</span><br><span class="line">    .outputFormat(<span class="string">"jpg"</span>)</span><br><span class="line">    .toFiles(Rename.PREFIX_DOT_THUMBNAIL);</span><br></pre></td></tr></table></figure>
+
+<p><em>Thumbnailator</em>提供的流式接口将制作缩略图的任务变成了一个简单的方法调用！</p>
+<p>不需要访问Image I/O API 和 通过<code>Graphics2D</code>来手工操作<code>BufferedImage</code></p>
+<p><em>Thumbnailator</em>能为你做所有的这些事情。</p>
+<h2 id="Thumbnailator能做什么？"><a href="#Thumbnailator能做什么？" class="headerlink" title="Thumbnailator能做什么？"></a>Thumbnailator能做什么？</h2><p>想知道Thumbnailator能做什么, 你可以访问下面这些页面:</p>
+<ul>
+<li><a href="https://github.com/coobird/thumbnailator/wiki/Features" target="_blank" rel="noopener">Features</a></li>
+<li><a href="https://github.com/coobird/thumbnailator/wiki/Examples" target="_blank" rel="noopener">Examples</a></li>
+<li><a href="https://coobird.github.io/thumbnailator/javadoc/0.4.8/" target="_blank" rel="noopener">Thumbnailator API Documentation</a></li>
+</ul>
+<h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><p><em>Thumbnailator仍处于早期开发阶段，API随时可能发生变化。</em></p>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
-                <source type="audio/mpeg" src="http://domain.com/awesome.mp3">
+                <source type="audio/mpeg" src="">
             </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                    
+                        <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                    
+                </ul>
             
         </div>
         
