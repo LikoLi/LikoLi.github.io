@@ -6,7 +6,7 @@ categories:
 tags:
   - images
 mp3: ''
-cover: 'http://likoli.cn/imgs/eaJnXT_72a6da311f3717945adc8ebeee988824.png'
+cover: 'http://likoli.cn/imgs/file_1564729383000_cbcc21ec5dacb4c1bf9131cacd7f2e3f.jpg'
 date: 2019-08-01 19:50:19 
 ---
 
